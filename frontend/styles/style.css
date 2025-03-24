@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.house-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.house-item {
+    margin: 20px;
+    text-align: center;
+}
+
+.house-item img {
+    width: 300px;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.house-item img:hover {
+    transform: scale(1.1);
+}
+
+.house-item p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #ffcc00; /* Highlight color */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 20px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffcc00;
+}
+
+.highlight {
+    color: #ffcc00;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.selling-now {
+    font-size: 1.5em;
+    color: #ff0000;
+    font-weight: bold;
+    animation: blink 1s infinite;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+@keyframes blink {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
